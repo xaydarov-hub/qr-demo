@@ -1,0 +1,155 @@
+.footer {
+  margin-top: 40px;
+  border-top: 1px solid var(--color-border);
+  background: var(--color-bg-soft);
+  padding: 28px 0 20px;
+  /* iPhone bottom safe area */
+  padding-bottom: max(20px, var(--safe-bottom));
+}
+
+@media (min-width: 640px) {
+  .footer {
+    margin-top: 48px;
+    padding: 36px 0 24px;
+    padding-bottom: max(24px, var(--safe-bottom));
+  }
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+@media (min-width: 640px) {
+  .inner {
+    gap: 20px;
+  }
+}
+
+.brandName {
+  font-family: var(--font-display);
+  font-size: 18px;
+  color: var(--color-text);
+  letter-spacing: 0.03em;
+}
+
+@media (min-width: 480px) {
+  .brandName {
+    font-size: 20px;
+  }
+}
+
+.tagline {
+  margin-top: 5px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-text-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+@media (min-width: 480px) {
+  .tagline {
+    margin-top: 6px;
+    font-size: 12px;
+  }
+}
+
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+@media (min-width: 480px) {
+  .infoList {
+    gap: 10px;
+  }
+}
+
+.infoList li {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+@media (min-width: 480px) {
+  .infoList li {
+    gap: 10px;
+    font-size: 13.5px;
+  }
+}
+
+.infoList svg {
+  color: var(--color-gold);
+  flex-shrink: 0;
+}
+
+.infoList a {
+  color: var(--color-text-muted);
+}
+
+.social {
+  display: flex;
+  gap: 8px;
+}
+
+@media (min-width: 480px) {
+  .social {
+    gap: 10px;
+  }
+}
+
+.socialBtn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s var(--ease-premium);
+  min-height: unset;
+  min-width: unset;
+}
+
+@media (min-width: 480px) {
+  .socialBtn {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.socialBtn:hover {
+  border-color: var(--color-gold);
+  color: var(--color-gold);
+}
+
+.bottomRow {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-border);
+  font-size: 11px;
+  color: var(--color-text-faint);
+}
+
+@media (min-width: 480px) {
+  .bottomRow {
+    gap: 8px;
+    padding-top: 18px;
+    font-size: 12px;
+  }
+}
+
+.version {
+  font-family: var(--font-mono);
+}
+

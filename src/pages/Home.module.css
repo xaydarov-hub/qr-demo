@@ -1,0 +1,58 @@
+.page {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: var(--color-bg);
+}
+
+.searchWrap {
+  margin-top: -20px;
+  position: relative;
+  z-index: 5;
+}
+
+@media (min-width: 480px) {
+  .searchWrap {
+    margin-top: -24px;
+  }
+}
+
+@media (min-width: 640px) {
+  .searchWrap {
+    margin-top: -26px;
+  }
+}
+
+.branchSection {
+  margin-top: 28px;
+  padding-top: 6px;
+}
+
+@media (min-width: 640px) {
+  .branchSection {
+    margin-top: 40px;
+    padding-top: 8px;
+  }
+}
+
+.branchTitle {
+  padding: 0 16px;
+  margin-bottom: 10px;
+  font-size: 17px;
+  color: var(--color-text);
+}
+
+@media (min-width: 480px) {
+  .branchTitle {
+    padding: 0 20px;
+    margin-bottom: 12px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 640px) {
+  .branchTitle {
+    margin-bottom: 14px;
+    font-size: 20px;
+  }
+}
+

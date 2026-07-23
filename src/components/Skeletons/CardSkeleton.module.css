@@ -1,0 +1,30 @@
+.row {
+  display: flex;
+  gap: 14px;
+  padding: 0 20px;
+}
+
+.card {
+  flex-shrink: 0;
+  width: 200px;
+}
+
+.image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius-lg);
+  margin-bottom: 10px;
+}
+
+.line {
+  height: 14px;
+  width: 80%;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.lineShort {
+  height: 14px;
+  width: 40%;
+  border-radius: 6px;
+}

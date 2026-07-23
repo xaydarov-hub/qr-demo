@@ -1,0 +1,62 @@
+.wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 48px;
+  padding: 0 14px;
+  border-radius: var(--radius-pill);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  transition: border-color 0.2s var(--ease-premium);
+}
+
+@media (min-width: 480px) {
+  .wrap {
+    gap: 10px;
+    padding: 0 16px;
+  }
+}
+
+.wrap:focus-within {
+  border-color: var(--color-gold);
+}
+
+.icon {
+  color: var(--color-text-faint);
+  flex-shrink: 0;
+}
+
+.input {
+  flex: 1;
+  min-width: 0;
+  background: transparent;
+  border: none;
+  color: var(--color-text);
+  /* 16px prevents iOS auto-zoom on focus */
+  font-size: 16px;
+}
+
+.input::placeholder {
+  color: var(--color-text-faint);
+  font-size: 15px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.clear {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: none;
+  background: var(--color-surface-elevated);
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: unset;
+  min-width: unset;
+}
+

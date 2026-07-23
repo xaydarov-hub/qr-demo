@@ -1,0 +1,17 @@
+.row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-bottom: 14px;
+}
+
+.eyebrow {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.title {
+  font-size: 20px;
+  color: var(--color-text);
+}
